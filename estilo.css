@@ -1,0 +1,107 @@
+
+body{
+    background-position: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(nuvem.jpg);
+    text-align: justify;
+}
+
+h1{
+    background-color: snow;
+    width: 500px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 4px 5px black;
+    border-radius: 10px 20px 30px 40px;
+    text-align: center;
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-shadow:2px 2px 0px white;
+
+}
+h3{
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-shadow:2px 3px 0px black;
+    color:white;
+
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    text-align: justify;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a,ol,li{
+    text-align: jus;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+iframe.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    width: 400px;
+    border: black;
+    text-align: center;
+    border-collapse: separate;
+}
+th{
+    border: 1px solid black;
+}
+tbody > tr:nth-child(even){
+    background-color: rgb(113, 113, 119);
+}
+tbody > tr:nth-child(odd){
+    background-color: rgb(165, 197, 247);
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: left;
+    top: 10px;
+    left: 200;
+}
+nav#menu{
+    display: block;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: black;
+    padding: 4px;
+    margin: 1px;
+}
+nav#menu li:hover{
+    background-color: lightblue;
+}
+nav#menu a{
+    color:snow;
+    text-decoration: none;
+}
