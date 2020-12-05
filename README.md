@@ -13,6 +13,11 @@
 1. Nova página html, intitulada “form”, onde foi adicionado um formulário sobre o tema do projeto, armazenamento. (entrega 5) arquivo: form.html
 1. Foi adicionado em todas as páginas o Media Queries, para adaptá-las a qualquer tamanho de tela. (entrega 5) arquivo: está presente em todas as páginas html.
 
+ * Entrega 6
+ 1. O media queries foi adicionado diretamente no CSS. arquivo: estilo.css
+ 1. O javascript foi utilizado para validação dos dados do formulário. arquivo: form.html
+ 1. A animação acontece quando é passado o mouse em cima do elemento. arquivo: form.html
+
 # Integrantes da Equipe
 * Ana Carolina Fernandes da Silva
 * Daniella Teixeira Marques da Silva
