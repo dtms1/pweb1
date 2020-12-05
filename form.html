@@ -14,8 +14,8 @@
 
   var nome = document.getElementById("camponome");
   var email = document.getElementById("campoemail");
-  var utils = document.getElementById("usim");
-  var utiln = document.getElementById("unao");
+  var utiln = document.getElementById("nuvem");
+  var utilm = document.getElementById("memoria");
   var cap = document.getElementById("campogb");
   var desc = document.getElementById("campodesc");
   var sat = document.getElementById("camposat");
@@ -31,18 +31,33 @@
     campoemail.focus();
     return;
   }
-  if (utils.value == "") {
-    alert("Utilização de nuvem não informada");
-    usim.focus();
+  if (utiln.value == "") {
+    alert("Utilização não informada");
+    nuvem.focus();
     return;
   }
-  if (utiln.value == "") {
-    alert("Utilização de nuvem não informada");
-    unao.focus();
+  if (utilm.value == "") {
+    alert("Utilização não informada");
+    memoria.focus();
+    return;
+  }
+     if (cap.value == "") {
+    alert("Capacidade não informado");
+    campogb.focus();
+    return;
+  }
+  if (desc.value == "") {
+    alert("O que você costuma armazenar não informado");
+    campodesc.focus();
+    return;
+  }
+  if (sat.value == "") {
+    alert("Satisfação não informada");
+    camposat.focus();
     return;
   }
   alert("Formulário enviado!");
-form.submit();
+formulario.submit();
 }
     </script>
     <nav id="menu">
@@ -67,13 +82,13 @@ form.submit();
             <p><label for="campoemail">E-mail:</label>
                 <input type="email" name="mail" id="campoemail" size="30" maxlength="50"></p>
             <p><fieldset style="width: 100px;">
-                <legend>Você utiliza algum tipo de armazenamento?</legend>
-                <input type="radio" name="util" id="usim">
-                <label for="usim">Sim</label>
-                <input type="radio" name="util" id="unao">
-                <label for="unao">Não</label>
+                <legend>Qual tipo de armazenamento vc utiliza?</legend>
+                <input type="radio" name="util" id="nuvem">
+                <label for="un">Nuvem</label>
+                <input type="radio" name="util" id="memoria">
+                <label for="um">Memória</label>
             </fieldset></p>
-            <p>Caso você tenha respondido sim na pergunta anterior:<label for="campogb">Qual capacidade supre suas necessidades?</label>
+            <p><label for="campogb">Qual capacidade supre suas necessidades?</label>
             <select name="capacidade" id="campogb">
                 <option value="">Escolha</option>
                 <optgroup label= "Capacidade">
