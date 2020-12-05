@@ -5,15 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo-geral.css" media="all">
-        <link rel="stylesheet" href="small-screen.css" media="screen and (max-width: 600px)">
-        <link rel="stylesheet" href="phone.css" media="screen and (min-width: 600px) and (max-width: 768px">
-        <link rel="stylesheet" href="tablet.css" media="screen and (min-width:768px) and (max-width: 992px)">
-        <link rel="stylesheet" href="pc.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
-        <link rel="stylesheet" href="tv.css" media="screen and (min-width: 1200px)">
+   
     <title>Formulário</title>
 </head>
 <body>
+    <script>
+    function validar() {
+
+  var nome = document.getElementById("camponome");
+  var email = document.getElementById("campoemail");
+  var utils = document.getElementById("usim");
+  var utiln = document.getElementById("unao");
+  var cap = document.getElementById("campogb");
+  var desc = document.getElementById("campodesc");
+  var sat = document.getElementById("camposat");
+
+  if (nome.value == "") {
+    alert("Nome não informado");
+    camponome.focus();
+    return;
+  }
+  if (email.value == "") {
+    alert("E-mail não informado");
+    campoemail.focus();
+    return;
+  }
+  if (utils.value == "") {
+    alert("Utilização de nuvem não informada");
+    usim.focus();
+    return;
+  }
+  if (utiln.value == "") {
+    alert("Utilização de nuvem não informada");
+    unao.focus();
+    return;
+  }
+  if (cap.value == "") {
+    alert("Capacidade não informado");
+    campogb.focus();
+    return;
+  }
+  if (desc.value == "") {
+    alert("O que você costuma armazenar não informado");
+    campodesc.focus();
+    return;
+  }
+  if (sat.value == "") {
+    alert("Satisfação não informada");
+    camposat.focus();
+    return;
+  }
+  alert("Formulário enviado!");
+formulario.submit();
+}
+    </script>
     <nav id="menu">
         <h1>Menu Principal</h1>
         <ul type = "disc">
@@ -30,7 +75,7 @@
         <br>
         <br>
         <br>
-        <form method= "GET" action="form.php">
+        <form action="" id="formulario" method="POST" name="formulario">
             <p><label for="camponome">Nome:</label>
                 <input type="text" name="nome" id="camponome"></p>
             <p><label for="campoemail">E-mail:</label>
@@ -52,11 +97,20 @@
                 </optgroup>
             </select>
             </p>
-            <p><label for="campodesc">O que você costuma armazenar?</label></p>
+            <p><label for="campodesc">O que você costuma armazenar?</label>
+                <div onmouseover="mOver(this)" onmouseout="mOut(this)">Passe o mouse</div>
+                <script>
+                function mOver(obj){
+                    obj.innerHTML="Você irá fazer uma breve exposição do que você normalmente salva em smartphone/nuvem/computador. Ex: Fotos, vídeos, documentos..."
+                    }
+                    function mOut(obj){
+                        obj.innerHTML="Passe o mouse"
+                        }
+                        </script></p>
             <textarea name="desc" id="campodesc" cols="30" rows="10"></textarea>
             <p><label for="camposat">Qual o nível de satisfação em armazenar seus dados na nuvem?</label>
             <input type="range" name="sat" id="camposat" min="0" max="10" value="0"></p>
-            <p><input type="submit" value="ENVIAR">
+            <p><input type="submit" value="ENVIAR" onclick="validar()">
             <input type="reset" value="LIMPAR"></p>
         </form>
 </body>
