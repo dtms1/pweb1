@@ -19,7 +19,7 @@
   var cap = document.getElementById("campogb");
   var desc = document.getElementById("campodesc");
   var sat = document.getElementById("camposat");
-  var form document.getElementById("form");
+  var form = document.getElementById("form");
 
   if (nome.value == "") {
     alert("Nome não informado");
@@ -41,23 +41,8 @@
     unao.focus();
     return;
   }
-  if (cap.value == "") {
-    alert("Capacidade não informado");
-    campogb.focus();
-    return;
-  }
-  if (desc.value == "") {
-    alert("O que você costuma armazenar não informado");
-    campodesc.focus();
-    return;
-  }
-  if (sat.value == "") {
-    alert("Satisfação não informada");
-    camposat.focus();
-    return;
-  }
   alert("Formulário enviado!");
-formulario.submit();
+form.submit();
 }
     </script>
     <nav id="menu">
@@ -88,7 +73,7 @@ formulario.submit();
                 <input type="radio" name="util" id="unao">
                 <label for="unao">Não</label>
             </fieldset></p>
-            <p><label for="campogb">Qual capacidade supre suas necessidades?</label>
+            <p>Caso você tenha respondido sim na pergunta anterior:<label for="campogb">Qual capacidade supre suas necessidades?</label>
             <select name="capacidade" id="campogb">
                 <option value="">Escolha</option>
                 <optgroup label= "Capacidade">
