@@ -7,43 +7,11 @@ body{
     background-image: url(nuvem.jpg);
     text-align: justify;
 }
-/*small screen*/
-@media screen and (max-width: 600px){
-    body{
-        background-image: url(nuvem.jpg);
-        background-attachment: fixed;
-    }
-}
-/* phone */
-@media screen and (min-width: 600px) and (max-width: 768px){
-    body{
-        background-image: url(nuvem.jpg);
-        background-attachment: fixed;
-    }
-}
-/*tablet*/
-@media screen and (min-width:768px) and (max-width: 992px){
-    body{
-        background-image: url(nuvem.jpg);
-        background-attachment: fixed;
-    }
-}
-/*pc*/
-@media screen and (min-width: 992px) and (max-width: 1200px){
-    body{
-        background-image: url(nuvem.jpg);
-        background-attachment: fixed;
-    }
-}
-/*tv*/
-@media screen and (min-width: 1200px){
-    body{
-        background-image: url(nuvem.jpg);
-        background-attachment: fixed;
-    }
-}
-
-
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
 h1{
     background-color: snow;
     width: 500px;
