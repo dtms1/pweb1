@@ -17,6 +17,9 @@
  1. O media queries foi adicionado diretamente no CSS. arquivo: estilo.css
  1. O javascript foi utilizado para validação dos dados do formulário. arquivo: form.html
  1. A animação acontece quando é passado o mouse em cima do elemento. arquivo: form.html
+ 
+ * Entrega 7
+ 1. Três páginas atualizadas com o framework bootstrap. arquivo: pagina2.html, pagina3.html e pagina4.html
 
 # Integrantes da Equipe
 * Ana Carolina Fernandes da Silva
